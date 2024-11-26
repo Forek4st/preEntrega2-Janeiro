@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  width: 80%;
+  height: 100vh;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#createRoomForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+#createRoomForm button {
+  width: 8rem;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+}
+
+#createRoomForm div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#roomNumber {
+  width: 3rem;
+}
+
+#guestId {
+  width: 10rem;
+}
+
+#createRoomForm select,
+#createRoomForm input {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  height: 2rem;
+  text-align: center;
+  padding: 0 0.25rem;
+}
+
+#occupiedRoomsTable {
+  width: 100%;
+}
+
+#occupiedRoomsTable thead {
+  font-size: 1.5rem;
+  width: 100%;
+  font-weight: bolder;
+}
+
+#occupiedRoomsTable tbody {
+  font-size: 1rem;
+  text-align: center;
+}
+
+#occupiedRoomsTable tbody td {
+  padding: 0.5rem;
+}

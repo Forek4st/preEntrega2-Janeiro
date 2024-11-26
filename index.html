@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motel Pyro</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>Registrar Habitación</h1>
+    <form id="createRoomForm">
+      <div class="form-group form-group-type">
+        <label for="roomType">Tipo:</label>
+        <select id="roomType" name="roomType" required>
+          <option value="" disabled selected>Tipo de Habitación</option>
+          <option value="Sencilla">Sencilla</option>
+          <option value="Jacuzzi">Jacuzzi</option>
+        </select>
+
+        <label for="hours">Horas:</label>
+        <select id="hours" name="hours" required>
+          <option value="" disabled selected>Tiempo</option>
+          <option value="6">6</option>
+          <option value="9">9</option>
+          <option value="12">12</option>
+          <option value="24">24</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="roomNumber"># Habitación:</label>
+        <input type="text" id="roomNumber" name="roomNumber" required />
+
+        <label for="guestId">Placas:</label>
+        <input type="text" id="guestId" name="guestId" required />
+      </div>
+
+      <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Habitaciones Ocupadas</h2>
+    <table id="occupiedRoomsTable" border="1">
+      <thead>
+        <tr>
+          <th>Ticket</th>
+          <th>Hora de Entrada</th>
+          <th>Placas</th>
+          <th>Habitación</th>
+          <th>Precio</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+      <tbody id="occupiedRoomsList"></tbody>
+    </table>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
