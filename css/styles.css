@@ -9,7 +9,7 @@
 }
 
 body {
-  width: 80%;
+  width: 100%;
   height: 100vh;
   margin: 3rem auto;
   display: flex;
@@ -74,7 +74,7 @@ h2 {
 }
 
 #occupiedRoomsTable {
-  width: 100%;
+  width: 80%;
 }
 
 #occupiedRoomsTable thead {
@@ -90,4 +90,12 @@ h2 {
 
 #occupiedRoomsTable tbody td {
   padding: 0.5rem;
+}
+
+.delete-btn {
+  width: 50%;
+
+  background-color: white;
+  border: 0px;
+  cursor: pointer;
 }
