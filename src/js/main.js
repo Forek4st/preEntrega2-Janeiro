@@ -1,4 +1,4 @@
-const occupiedRooms = JSON.parse(localStorage.getItem("occupiedRooms")) || [];
+let occupiedRooms = JSON.parse(localStorage.getItem("occupiedRooms")) || [];
 
 class Room {
   static ISH = 0.04;
@@ -167,9 +167,9 @@ const renderOccupiedRooms = () => {
 };
 
 const deleteRoom = (roomId) => {
-  const roomIndex = occupiedRooms.findIndex((room) => room.id === roomId);
-  if (roomIndex !== -1) {
-    occupiedRooms.splice(roomIndex, 1);
+  const roomToDelete = occupiedRooms.find((room) => room.id === roomId);
+  if (roomToDelete) {
+    occupiedRooms = occupiedRooms.filter((room) => room.id !== roomId);
     localStorage.setItem("occupiedRooms", JSON.stringify(occupiedRooms));
     renderOccupiedRooms();
   }
